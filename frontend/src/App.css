@@ -1,31 +1,90 @@
 /* App.css */
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Full viewport height */
-  }
-  
-  .container {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .top-half {
-    flex: 1; /* Takes up 50% of the height */
-    background-color: lightgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .bottom-half {
-    flex: 1; /* Takes up 50% of the height */
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.top-half {
+  flex: 1; /* Takes up 50% of the height */
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.bottom-half {
+  flex: 1; /* Takes up 50% of the height */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Shopping Cart Icon */
+.shopping-cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Item List */
+.item-list {
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.item button {
+  background-color: lightgreen;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: darkgreen;
+  color: white;
+}
